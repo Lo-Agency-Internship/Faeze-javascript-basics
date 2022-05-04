@@ -2,7 +2,8 @@
 //alert(" welcome  " + MyMessage );
 
 
-//The variables
+// The variables
+
  let firstName = prompt("please enter your name : ");
  let age1 = prompt("please enter your age : ") ;
  let gender1 = prompt("please enter your gender : ") ;
@@ -47,5 +48,48 @@ function bin2dec(string){
 }
 let number ="1000";
 console.log(bin2dec(number));
+
+
+// Comparisons
+
+//part 1 : a function to compute the sum of the two given integers.
+   function sum(p1, p2) {
+    if(p1 === p2){
+
+        return 3*(p1 + p2);
+    }
+    
+    }
+    console.log(sum(10,10));
+    
+    //part 2 :  a function to compute the absolute difference between a specified number and 19.
+    function difference(p3){
+
+        const p4 =19;
+        let result = Math.abs(p3 - p4);
+        if(result >p4) {
+            return (3 * result);
+        }
+        else{
+            
+            return result;
+        }
+
+        }
+   
+    console.log(difference(9));
+  
+    //part 3 : a function to create a new string adding "Lo" in front of a given string.
+   function newstring(string){
+       if(string.startsWith("Lo")){
+           return(string);
+       }
+       else{
+           return("Lo" + " " + string )
+       }
+
+   }
+   console.log(newstring("Hello"));
+
 
 
