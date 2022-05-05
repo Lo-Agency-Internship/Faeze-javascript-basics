@@ -2,7 +2,7 @@
 //alert(" welcome  " + MyMessage );
 
 
-// The variables
+ //The variables
 
  let firstName = prompt("please enter your name : ");
  let age1 = prompt("please enter your age : ") ;
@@ -90,6 +90,99 @@ console.log(bin2dec(number));
 
    }
    console.log(newstring("Hello"));
+  
 
+    //Logical operators
+    
+   //Buffer gate
+   function logicalGateBuffer(p){
+            return p ;
+   }
+   console.log(logicalGateBuffer(false));
+   // Not gate
+   function logicalGateNot(p){
+       return !p ;
+    }
+    console.log(logicalGateNot(false));
+  // And gate
+  function logicalGateAnd(p1,p2){
+      if(p1 === true && p2 === true){
+        
+         return true ;
+  }
+  else{
+      return false 
+  }
+}
+  console.log(logicalGateAnd(true,false));
 
+   
+  // Or gate
 
+   function logicalGateOr(p1,p2){
+    
+    if(p1 ===false && p2 ===flase ){
+      
+        return false ;
+}
+  else{
+    
+    return true;
+}
+}
+console.log(logicalGateOr(true,false));
+// Nand gate
+function logicalGateNand(p1,p2){
+   
+    if(p1 === true && p2 ===  true ){
+    
+        return false ;
+}
+  else{
+    
+    return true;
+}
+}
+console.log(logicalGateNand(false,true));
+
+//Nor gate
+function logicalGateNor(p1,p2){
+   
+    if(p1 === false && p2 ===  false){
+    
+        return true ;
+}
+  else{
+    
+    return false;
+}
+}
+console.log(logicalGateNor(false,false));
+
+//Xor gate
+function logicalGateXor (p1,p2){
+   
+    if(p1 === p2){
+    
+        return false ;
+}
+  else{
+    
+    return true;
+}
+}
+console.log(logicalGateXor (true,false));
+
+//Xnor gate
+function logicalGateXnor (p1,p2){
+   
+    if(p1 === p2){
+    
+        return true ;
+}
+  else{
+    
+    return false;
+}
+}
+console.log(logicalGateXnor (false,false));
