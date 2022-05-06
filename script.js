@@ -85,7 +85,7 @@ console.log(bin2dec(number));
            return(string);
        }
        else{
-           return("Lo" + " " + string )
+           return( `Lo ${string}` );
        }
 
    }
@@ -186,3 +186,57 @@ function logicalGateXnor (p1,p2){
 }
 }
 console.log(logicalGateXnor (false,false));
+
+
+//Loops: while and for
+    
+//iterative
+
+function factorialiterative(number){
+    if ( number > 0){
+        let result = 1;
+         for(let i = 1 ; i <= number ; i++){
+            result = result * i;
+         }
+         return result;
+    }
+     //  0! = 1 
+    else if ( number === 0 ){
+        return 1 ;
+    }
+    else{
+       
+        return  (" cant find factorial for negative number");
+    }
+       
+    }
+
+    console.log(factorialiterative(-3));
+
+
+
+
+ //recursive
+
+function factorialrecursive(number){
+    
+    if (number > 0 ){
+        let result = 1 ;
+         for(let i = 1 ; i <= number ; i++){
+             result = i * factorialrecursive ( i - 1)
+    }
+       return result;
+   }
+    //  0! = 1 
+     else if ( number === 0 ){
+        return 1 ;
+    }
+
+    else {
+        return (" cant find factorial for negative number");
+
+    }
+   
+}
+console.log(factorialrecursive(4));
+
