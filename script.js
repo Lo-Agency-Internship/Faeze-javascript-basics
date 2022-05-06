@@ -2,7 +2,8 @@
 //alert(" welcome  " + MyMessage );
 
 
- //The variables
+
+/*  The variables
 
  let firstName = prompt("please enter your name : ");
  let age1 = prompt("please enter your age : ") ;
@@ -33,7 +34,7 @@ document.getElementById("show").innerHTML= info;
 
 // Basic operators, maths
 
-//myrandom
+myrandom
 
 function random(min, max) {
     randomNumber = Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -49,8 +50,7 @@ function bin2dec(string){
 let number ="1000";
 console.log(bin2dec(number));
 
-
-// Comparisons
+Comparisons
 
 //part 1 : a function to compute the sum of the two given integers.
    function sum(p1, p2) {
@@ -239,4 +239,70 @@ function factorialrecursive(number){
    
 }
 console.log(factorialrecursive(4));
+*/
 
+    //Functions
+
+    // an array of random numbers
+    function random(num1, num2) {
+        return randomNumber = Math.floor(Math.random() * (num2 - num1 + 1) ) + num1;
+    
+    }
+    const array = [] ;
+    array.push(random(15,50));
+    array.push(random(15,50));
+    array.push(random(15,50));
+    array.push(random(15,50));
+    console.log(array); 
+    
+    // the map function
+    
+    function customMap(array, f) {
+        const arrayFromcustomMap = [];
+        for( let value of array ){
+            arrayFromcustomMap.push(f(value));
+            
+        }
+        return  arrayFromcustomMap;
+        
+    }
+    
+    const tst_1 = customMap (array , (value) => {
+        return value * 2 ;
+    
+    });
+    console.log(tst_1);
+     
+    //  the filter function
+    
+     function customFilter(array,f){
+        const arrayFromcustomFilter = [];
+         for( let  value of array ){
+    
+                arrayFromcustomFilter.push(f(value));
+             }
+             return arrayFromcustomFilter  ;
+       
+            
+        }
+        
+     
+     const tst_2 =  customFilter(array , (value) => {
+        return value > 30 ;
+    
+    });
+    console.log(tst_2);
+    
+    // the reduce function
+    function customReduce(array, f) {
+        let accumulator = 0;
+        for (let i = 0; i < array.length; i++) {
+            accumulator = f(array[i], accumulator);
+        }
+        return accumulator;
+    }
+    const tst_3 = customReduce(array, function (accumulator, currentValue) {
+        return accumulator + currentValue;
+    });
+    console.log(tst_3);
+    
