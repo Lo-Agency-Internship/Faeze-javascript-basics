@@ -3,7 +3,7 @@
 
 
 
-/*  The variables
+ // The variables
 
  let firstName = prompt("please enter your name : ");
  let age1 = prompt("please enter your age : ") ;
@@ -34,7 +34,7 @@ document.getElementById("show").innerHTML= info;
 
 // Basic operators, maths
 
-myrandom
+//myrandom
 
 function random(min, max) {
     randomNumber = Math.floor(Math.random() * (max - min + 1) ) + min;
@@ -50,7 +50,7 @@ function bin2dec(string){
 let number ="1000";
 console.log(bin2dec(number));
 
-Comparisons
+//Comparisons
 
 //part 1 : a function to compute the sum of the two given integers.
    function sum(p1, p2) {
@@ -239,9 +239,9 @@ function factorialrecursive(number){
    
 }
 console.log(factorialrecursive(4));
-*/
 
-    //Functions
+
+   //Functions
 
     // an array of random numbers
     function random(num1, num2) {
@@ -282,7 +282,6 @@ console.log(factorialrecursive(4));
                 arrayFromcustomFilter.push(f(value));
              }
              return arrayFromcustomFilter  ;
-       
             
         }
         
@@ -305,4 +304,4 @@ console.log(factorialrecursive(4));
         return accumulator + currentValue;
     });
     console.log(tst_3);
-    
+
